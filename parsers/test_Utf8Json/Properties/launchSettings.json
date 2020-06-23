@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "test_Utf8Json": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\OneDrive\\home\\JSONTestSuite\\test_parsing\\n_structure_number_with_trailing_garbage.json"
+    }
+  }
+}

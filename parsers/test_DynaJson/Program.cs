@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
-using Newtonsoft.Json;
+using DynaJson;
 
-namespace test_Json.NET
+namespace test_DynaJson
 {
     public class Program
     {
@@ -18,7 +18,7 @@ namespace test_Json.NET
             {
                 try
                 {
-                    JsonConvert.DeserializeObject(File.ReadAllText(args[0]));
+                    JsonObject.Parse(File.ReadAllText(args[0]));
                 }
                 catch (Exception e)
                 {

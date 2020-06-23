@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
-using Newtonsoft.Json;
+using Codeplex.Data;
 
-namespace test_Json.NET
+namespace test_DynamicJson
 {
     public class Program
     {
@@ -18,13 +18,14 @@ namespace test_Json.NET
             {
                 try
                 {
-                    JsonConvert.DeserializeObject(File.ReadAllText(args[0]));
+                    DynamicJson.Parse(File.ReadAllText(args[0]));
                 }
                 catch (Exception e)
                 {
                     Console.Error.WriteLine(e);
                     return 1;
                 }
+
                 return 0;
             }
             catch (Exception e)

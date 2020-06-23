@@ -1,0 +1,7 @@
+*.user
+*.pdb
+*.exe
+obj/
+.vs/
+bin/**/netcoreapp*/*
+!bin/**/netcoreapp*/publish
